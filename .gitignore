@@ -1,0 +1,35 @@
+# Godot 4 cache and export
+.godot/
+*.translation
+
+# Original proprietary game assets (not bundled due to copyright)
+source/
+game_data/*
+!game_data/README.md
+!game_data/.gitkeep
+
+project/assets/sprites/*
+!project/assets/sprites/.gitkeep
+project/assets/audio/*
+!project/assets/audio/.gitkeep
+project/data/levels/*
+!project/data/levels/.gitkeep
+project/data/*.json
+
+# Game packages and archives
+*.ipa
+*.zip
+*.7z
+*.rar
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Test captures and logs
+level1_*.png
+level1_test.png
+level1_full_test.png
+level1_top_crop.png
+test_anchor_0_0.png
+*.log

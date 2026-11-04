@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5q3b2r1u7v8w"]
+
+[ext_resource type="Script" path="res://scripts/Kiana.gd" id="1_kiana"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1"]
+radius = 14.0
+height = 42.0
+
+[node name="Kiana" type="RigidBody2D"]
+collision_layer = 1
+collision_mask = 6
+mass = 1.0
+linear_damp = 0.1
+gravity_scale = 1.0
+lock_rotation = true
+contact_monitor = true
+max_contacts_reported = 4
+script = ExtResource("1_kiana")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.6, 1.6)
+position_smoothing_enabled = true
+position_smoothing_speed = 7.0
+limit_left = 0
+limit_top = 0
+limit_right = 960
+limit_bottom = 1440
