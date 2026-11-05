@@ -32,9 +32,7 @@ Load the /project/project.godot in Godot. Press F5/click the small triangle butt
 - [ ] Add audio and story text
 
 ## Contribute
- Feel free to send PRs! You just need to test if it works. We don't care if it's AI or not anyway.
-
- Requires proper writeups for each PR.
+ Feel free to send PRs! You just need to test if it works, as well as a proper writeup. We don't care if it's AI or not anyway.
 
  ## License
  GNU GPLv3. Data files are copyrighted (and not included).
